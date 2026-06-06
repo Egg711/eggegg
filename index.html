@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Egg Egg 产品展示 | Dash, Quik, Jolyice, Gowif, Relx</title>
+<meta name="description" content="Egg Egg 产品展示静态网站，包含 Dash、Quik、Jolyice、Gowif、Relx六代杆、Relx五代杆等产品系列。图片仅供参考，文字介绍均为 AI 生成，禁止私下交易。" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#111111" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Egg Egg 产品展示" />
+<meta property="og:description" content="浏览 Egg Egg 产品系列展示。图片仅供参考，文字介绍均为 AI 生成，禁止私下交易。" />
+<meta property="og:image" content="ray_dash_final_clean_chinese_4col_assets/image_001.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Egg Egg 产品展示",
+  "description": "Egg Egg 产品展示静态网站，包含 Dash、Quik、Jolyice、Gowif、Relx六代杆、Relx五代杆等产品系列。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:#fff;color:#222;overflow-x:hidden}
+button{font:inherit}
+.age-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:12px;align-items:center;justify-content:center;padding:12px 18px;color:white;background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(0,0,0,.78));backdrop-filter:blur(10px);font-size:14px;font-weight:650}
+.age-badge{border:1.5px solid rgba(255,255,255,.85);border-radius:999px;padding:3px 9px;font-weight:900}
+.hero{min-height:100vh;position:relative;cursor:pointer;display:grid;place-items:end start;overflow:hidden;background:#111}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.01);transition:transform 1.2s ease,filter 1.2s ease}
+.hero:hover img{transform:scale(1.055);filter:saturate(1.08)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.48),rgba(0,0,0,.04) 58%,rgba(0,0,0,.35)),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.52))}
+.hero-content{position:relative;z-index:2;padding:8vw 8vw 11vh;color:white;animation:fadeUp .9s ease both}
+.hero h1{font-size:clamp(56px,9.5vw,142px);line-height:.9;letter-spacing:-.04em;font-weight:950;text-shadow:0 12px 45px rgba(0,0,0,.35)}
+.hero p{margin-top:18px;font-size:clamp(18px,2.4vw,31px);font-weight:750;letter-spacing:.02em}
+.tap{margin-top:30px;display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.78);border-radius:999px;padding:13px 22px;background:rgba(255,255,255,.13);backdrop-filter:blur(12px);font-weight:800}
+.tap i{width:8px;height:8px;border-radius:50%;background:white;box-shadow:0 0 18px white}
+.hero-note{margin-top:16px;max-width:720px;font-size:clamp(13px,1.35vw,18px);line-height:1.55;font-weight:750;color:rgba(255,255,255,.88);text-shadow:0 8px 28px rgba(0,0,0,.38)}
+.topnav{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:18px min(6vw,72px);background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.06)}
+.logo{font-size:26px;font-weight:950;letter-spacing:-.06em}
+.navlinks{display:flex;gap:22px;color:#666;font-weight:750}
+.navlinks a{color:inherit;text-decoration:none}
+.product{min-height:100vh;padding:36px min(6vw,72px) 78px;background:radial-gradient(circle at 82% 16%,#f4fbff 0,#fff 36%,#f8f8f8 100%)}
+.breadcrumb{font-size:18px;color:#919191;margin-bottom:26px}
+.breadcrumb b{color:#333}
+.layout{display:grid;grid-template-columns:minmax(360px,1.28fr) minmax(340px,.86fr);gap:min(7vw,88px);align-items:start}
+.layout>*{min-width:0}
+.gallery-main{height:min(66vw,690px);min-height:520px;border-radius:28px;background:#f7f7f7;display:grid;place-items:center;overflow:hidden;position:relative;box-shadow:inset 0 0 0 1px rgba(0,0,0,.03)}
+.gallery-main:before{content:"";position:absolute;width:46%;height:14%;bottom:9%;border-radius:50%;background:rgba(0,0,0,.08);filter:blur(22px)}
+.gallery-main img{position:relative;max-width:86%;max-height:88%;object-fit:contain;filter:drop-shadow(0 20px 20px rgba(0,0,0,.08));transition:opacity .32s ease,transform .32s ease}
+.gallery-main.switching img{opacity:0;transform:translateY(8px) scale(.985)}
+.thumbs{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap}
+.thumb{width:138px;height:116px;border:2px solid transparent;background:#f7f7f7;border-radius:18px;display:grid;place-items:center;cursor:pointer;transition:.22s;box-shadow:0 10px 24px rgba(0,0,0,.04);overflow:hidden}
+.thumb.active,.thumb:hover{border-color:#222;transform:translateY(-3px);box-shadow:0 18px 30px rgba(0,0,0,.09)}
+.thumb img{display:block;width:auto;height:auto;max-width:104px;max-height:88px;object-fit:contain}
+.info{padding-top:10px}
+.info h2{font-size:clamp(64px,7vw,102px);line-height:.88;letter-spacing:-.075em;font-weight:950;margin-bottom:16px}
+.subline{font-size:20px;color:#777;font-weight:750;margin-bottom:32px}
+.section-title{font-size:25px;font-weight:900;margin:26px 0 18px}
+.flavor-grid{display:grid;grid-template-columns:repeat(4,76px);gap:28px 22px;margin-bottom:44px}
+.flavor{width:76px;height:76px;border-radius:50%;border:2px solid #e0e0e0;background:linear-gradient(180deg,#fff,#f7f7f7);display:grid;place-items:center;cursor:pointer;box-shadow:inset 0 0 18px rgba(0,0,0,.04);transition:.24s;position:relative}
+.flavor:hover,.flavor.active{border-color:#111;transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.13)}
+.flavor img{max-height:60px;max-width:48px;object-fit:contain}
+.flavor span{position:absolute;top:84px;left:50%;transform:translateX(-50%);width:108px;text-align:center;font-size:12px;font-weight:800;color:#555;opacity:.72}
+.copy{margin-top:28px;font-size:22px;line-height:1.65;color:#333}
+.copy strong{font-size:25px;display:block;margin-top:18px}
+.pill-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.pill{border:1px solid #ddd;border-radius:999px;padding:10px 16px;background:#fff;color:#555;font-weight:750}
+.notice{margin-top:36px;padding:18px 20px;border-radius:18px;background:#f1f1f1;color:#555;line-height:1.55;font-size:14px}
+footer{padding:30px 6vw 58px;border-top:1px solid #eee;color:#777;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+.nav-products{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap;min-width:0}
+.nav-products a{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:999px;background:#111;color:white!important;text-decoration:none;font-weight:900;box-shadow:0 10px 22px rgba(0,0,0,.14)}
+.hero .tap{font-size:18px;padding:15px 26px;background:rgba(255,255,255,.22)}
+@media(max-width:900px){
+  .hero{min-height:100svh}
+  .hero-content{padding:10vw 6vw 12vh}
+  .hero h1{letter-spacing:-.025em}
+  .hero .tap{font-size:15px;padding:12px 18px}
+  .hero-note{max-width:92vw;font-size:13px;line-height:1.5}
+  .navlinks{display:none}
+  .topnav{padding:14px 18px;gap:14px}
+  .nav-products{gap:7px;flex-wrap:nowrap;overflow-x:auto;max-width:calc(100vw - 72px);padding-bottom:1px;scrollbar-width:none}
+  .nav-products::-webkit-scrollbar{display:none}
+  .nav-products a{flex:0 0 auto;padding:8px 11px;font-size:13px}
+  .product{min-height:auto;padding:26px 18px 54px}
+  .breadcrumb{font-size:15px;margin-bottom:18px}
+  .layout{grid-template-columns:1fr;gap:28px}
+  .gallery-main{height:clamp(300px,56vh,460px);min-height:0;border-radius:22px}
+  .gallery-main img{max-width:88%;max-height:86%}
+  .thumbs{margin-top:16px;gap:12px;justify-content:center}
+  .thumb{width:clamp(92px,28vw,118px);height:clamp(76px,24vw,98px);border-radius:14px}
+  .thumb img{max-width:78%;max-height:76%}
+  .info{padding-top:0}
+  .info h2{font-size:clamp(46px,14vw,70px);line-height:.92;letter-spacing:-.04em;margin-bottom:10px}
+  .subline{font-size:16px;margin-bottom:24px}
+  .section-title{font-size:20px;margin:22px 0 14px}
+  .flavor-grid{grid-template-columns:repeat(auto-fit,minmax(70px,1fr));justify-items:center;gap:34px 10px;margin-bottom:34px}
+  .flavor{width:68px;height:68px}
+  .flavor img{max-height:52px;max-width:42px}
+  .flavor span{top:74px;width:88px;font-size:11px;line-height:1.18;white-space:normal}
+  .copy{margin-top:22px;font-size:17px;line-height:1.58}
+  .copy strong{font-size:19px;margin-top:15px}
+  .pill-row{gap:8px;margin-top:20px}
+  .pill{padding:8px 12px;font-size:13px}
+  .notice{margin-top:24px;padding:14px 16px;border-radius:14px;font-size:13px}
+  .age-bar{position:static;font-size:12px;gap:9px;align-items:flex-start;justify-content:flex-start;padding:10px 14px}
+  .age-bar span:not(.age-badge){flex:1;min-width:0}
+  footer{padding-bottom:32px;font-size:13px}
+}
+@media(max-width:520px){
+  .topnav{padding:12px 14px}
+  .logo{font-size:23px}
+  .nav-products{max-width:calc(100vw - 58px);gap:6px}
+  .nav-products a{padding:7px 9px;font-size:12px}
+  .product{padding:22px 14px 54px}
+  .gallery-main{height:clamp(250px,48vh,360px);border-radius:18px}
+  .flavor-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 6px;max-width:310px;margin-left:auto;margin-right:auto}
+  .flavor{width:64px;height:64px}
+  .flavor img{max-height:49px;max-width:39px}
+  .flavor span{top:70px;width:82px}
+  .copy{font-size:16px}
+}
+
+
+/* Quik 主图专属修正：仅调整 Quik 产品图大小和位置，不影响 Dash 与口味圆形按钮 */
+#quik .gallery-main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+#quik .gallery-main > img{
+  height:auto;
+  width:auto;
+  max-width:86%;
+  max-height:88%;
+  object-fit:contain;
+  transform:none;
+}
+#quik .gallery-main.switching > img{
+  transform:scale(.985);
+}
+@media(max-width:900px){
+  #quik .gallery-main > img{
+    max-width:86%;
+    max-height:88%;
+    transform:none;
+  }
+}
+
+/* Gowif 主图是竖版照片，单独缩小留边，避免底部被展示框裁掉 */
+#gowif .gallery-main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+#gowif .gallery-main > img{
+  width:auto;
+  height:auto;
+  max-width:78%;
+  max-height:78%;
+  object-fit:contain;
+  object-position:center center;
+  transform:none;
+}
+#gowif .gallery-main.switching > img{
+  transform:scale(.985);
+}
+@media(max-width:900px){
+  #gowif .gallery-main > img{
+    max-width:82%;
+    max-height:76%;
+  }
+}
+@media(max-width:520px){
+  #gowif .gallery-main > img{
+    max-width:84%;
+    max-height:74%;
+  }
+}
+
+/* Relx杆体主图为细长杆体，单独留出上下边距 */
+#relx-sixth .gallery-main,
+#relx-fifth .gallery-main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+#relx-sixth .gallery-main > img,
+#relx-fifth .gallery-main > img{
+  width:auto;
+  height:auto;
+  max-width:72%;
+  max-height:82%;
+  object-fit:contain;
+  object-position:center center;
+  transform:none;
+}
+@media(max-width:900px){
+  #relx-sixth .gallery-main > img,
+  #relx-fifth .gallery-main > img{
+    max-width:78%;
+    max-height:82%;
+  }
+}
+@media(max-width:520px){
+  #relx-sixth .gallery-main > img,
+  #relx-fifth .gallery-main > img{
+    max-width:82%;
+    max-height:80%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="age-bar"><span class="age-badge">18+</span><span>未成年人禁止使用 · 本产品含尼古丁 · 仅面向符合法定年龄的成年用户展示</span></div>
+<section class="hero" id="home" onclick="document.getElementById('dash').scrollIntoView()" aria-label="点击查看产品展示">
+  <img src="ray_dash_final_clean_chinese_4col_assets/image_001.png" alt="Ray 封面图">
+  <div class="hero-content">
+    <h1>Egg Egg</h1>
+  <p>探索Egg产品系列</p>
+    <div class="tap"><i></i>轻触封面进入产品展示</div>
+    <div class="hero-note">图片仅供参考，文字介绍均为AI生成，禁止私下交易</div>
+  </div>
+</section>
+<nav class="topnav">
+  <div class="logo">Egg</div>
+  <div class="navlinks"><a href="#home">首页</a><a href="#dash">Dash</a><a href="#quik">Quik</a><a href="#jolyice">Jolyice</a><a href="#gowif">Gowif</a><a href="#relx-sixth">Relx六代杆</a><a href="#relx-fifth">Relx五代杆</a></div>
+  <div class="nav-products"><a href="#dash">Dash</a><a href="#quik">Quik</a><a href="#jolyice">Jolyice</a><a href="#gowif">Gowif</a><a href="#relx-sixth">Relx六代杆</a><a href="#relx-fifth">Relx五代杆</a></div>
+</nav>
+<main class="product" id="dash">
+  <div class="breadcrumb"><b>首页</b> › Dash</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="gallery"><img id="mainImage" alt="Dash 当前展示图"></div>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Dash</h2>
+      <div class="subline">选择口味</div>
+      <div class="flavor-grid" id="flavors"></div>
+      <div class="copy">
+        <strong id="flavorName">椰子水</strong>
+        <span id="flavorDesc">椰子水风味，清新顺滑，回味自然。</span>
+        <strong>产品包含：</strong>
+        一体式雾化设备
+        <strong>产品规格：</strong>
+        尺寸 (mm): 107 × 20 × 20
+      </div>
+      <div class="pill-row"><span class="pill">一次性设备</span><span class="pill">Dash 系列</span><span class="pill" id="flavorPill">椰子水</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+
+<main class="product" id="quik">
+  <div class="breadcrumb"><b>首页</b> › Quik</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="quikGallery"><img id="quikMainImage" src="ray_dash_final_clean_chinese_4col_assets/image_002.png" alt="Quik 番石榴 产品展示图"></div>
+      <div class="thumbs" id="quikThumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Quik</h2>
+      <div class="subline">选择口味</div>
+      <div class="flavor-grid" id="quikFlavors"></div>
+      <div class="copy">
+        <strong id="quikFlavorName">番石榴</strong>
+        <span id="quikFlavorDesc">清甜番石榴风味，果香柔和顺滑，入口清新，适合日常轻松使用。</span>
+        <strong>产品包含：</strong>
+        一体式雾化设备
+        <strong>产品规格：</strong>
+        尺寸 (mm): 约 107 × 20 × 20<br>口数：5000口
+      </div>
+      <div class="pill-row"><span class="pill">一次性设备</span><span class="pill">Quik 系列</span><span class="pill" id="quikFlavorPill">番石榴</span><span class="pill">5000口</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+
+<main class="product" id="jolyice">
+  <div class="breadcrumb"><b>首页</b> › Jolyice</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="jolyiceGallery"><img id="jolyiceMainImage" src="ray_dash_final_clean_chinese_4col_assets/jolyice_peach_oolong.jpg" alt="Jolyice 蜜桃乌龙 产品展示图"></div>
+      <div class="thumbs" id="jolyiceThumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Jolyice</h2>
+      <div class="subline">选择品种</div>
+      <div class="flavor-grid" id="jolyiceFlavors"></div>
+      <div class="copy">
+        <strong id="jolyiceFlavorName">蜜桃乌龙</strong>
+        <span id="jolyiceFlavorDesc">蜜桃与乌龙茶香融合，果香清甜，茶感柔和，入口清新顺滑。</span>
+        <strong>产品包含：</strong>
+        <span id="jolyiceProductName">Jolyice 蜜桃乌龙产品</span>
+        <strong>产品规格：</strong>
+        品种：<span id="jolyiceSpecName">蜜桃乌龙</span>
+      </div>
+      <div class="pill-row"><span class="pill">Jolyice 系列</span><span class="pill" id="jolyiceFlavorPill">蜜桃乌龙</span><span class="pill" id="jolyiceEnglishPill">Peach Oolong</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+
+<main class="product" id="gowif">
+  <div class="breadcrumb"><b>首页</b> › Gowif</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="gowifGallery"><img id="gowifMainImage" src="ray_dash_final_clean_chinese_4col_assets/gowif_passion_fruit.jpg" alt="Gowif 百香果 产品展示图"></div>
+      <div class="thumbs" id="gowifThumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Gowif</h2>
+      <div class="subline">选择口味</div>
+      <div class="flavor-grid" id="gowifFlavors"></div>
+      <div class="copy">
+        <strong id="gowifFlavorName">百香果</strong>
+        <span id="gowifFlavorDesc">百香果风味，酸甜明亮，果香清爽，入口顺滑。</span>
+        <strong>产品包含：</strong>
+        <span id="gowifProductName">Gowif 百香果产品</span>
+        <strong>产品规格：</strong>
+        口味：<span id="gowifSpecName">百香果</span>
+      </div>
+      <div class="pill-row"><span class="pill">Gowif 系列</span><span class="pill" id="gowifFlavorPill">百香果</span><span class="pill" id="gowifEnglishPill">Passion Fruit</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+
+<main class="product" id="relx-sixth">
+  <div class="breadcrumb"><b>首页</b> › Relx六代杆</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="relxSixthGallery"><img id="relxSixthMainImage" src="ray_dash_final_clean_chinese_4col_assets/relx_sixth_pink.jpg" alt="Relx六代杆 粉色 产品展示图"></div>
+      <div class="thumbs" id="relxSixthThumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Relx六代杆</h2>
+      <div class="subline">选择种类</div>
+      <div class="flavor-grid" id="relxSixthVariants"></div>
+      <div class="copy">
+        <strong id="relxSixthVariantName">粉色</strong>
+        <span id="relxSixthVariantDesc">Relx六代杆粉色款，机身色泽柔和，外观简洁清爽。</span>
+        <strong>产品包含：</strong>
+        <span id="relxSixthProductName">Relx六代杆粉色设备</span>
+        <strong>产品规格：</strong>
+        种类：<span id="relxSixthSpecName">粉色</span>
+      </div>
+      <div class="pill-row"><span class="pill">Relx六代杆</span><span class="pill" id="relxSixthVariantPill">粉色</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+
+<main class="product" id="relx-fifth">
+  <div class="breadcrumb"><b>首页</b> › Relx五代杆</div>
+  <section class="layout">
+    <div>
+      <div class="gallery-main" id="relxFifthGallery"><img id="relxFifthMainImage" src="ray_dash_final_clean_chinese_4col_assets/relx_fifth_blue_flame_starlight.jpg" alt="Relx五代杆 蓝焰星光 产品展示图"></div>
+      <div class="thumbs" id="relxFifthThumbs"></div>
+    </div>
+    <aside class="info">
+      <h2>Relx五代杆</h2>
+      <div class="subline">选择种类</div>
+      <div class="flavor-grid" id="relxFifthVariants"></div>
+      <div class="copy">
+        <strong id="relxFifthVariantName">蓝焰星光</strong>
+        <span id="relxFifthVariantDesc">Relx五代杆蓝焰星光款，蓝金渐变清爽明亮，机身质感细腻。</span>
+        <strong>产品包含：</strong>
+        <span id="relxFifthProductName">Relx五代杆蓝焰星光设备</span>
+        <strong>产品规格：</strong>
+        种类：<span id="relxFifthSpecName">蓝焰星光</span>
+      </div>
+      <div class="pill-row"><span class="pill">Relx五代杆</span><span class="pill" id="relxFifthVariantPill">蓝焰星光</span></div>
+      <div class="notice">仅限18岁及以上成年用户。请遵守当地法律法规。本产品含尼古丁，尼古丁具有成瘾性。</div>
+    </aside>
+  </section>
+</main>
+<footer><span>© Ray Showcase</span><span>产品：Dash · Quik · Jolyice · Gowif · Relx六代杆 · Relx五代杆 | Dash：24款口味 | Quik：13款口味 | Jolyice：8款品种 | Gowif：8款口味 | Relx六代杆：7款种类 | Relx五代杆：9款种类</span></footer>
+<script>
+const flavors = [
+  {name:'椰子水', desc:'椰子水风味，清新顺滑，回味自然。', images:['ray_dash_final_clean_chinese_4col_assets/image_003.png','ray_dash_final_clean_chinese_4col_assets/image_004.png']},
+  {name:'冰荔枝', desc:'荔枝果香清甜，冰爽顺滑，入口清新。', images:['ray_dash_final_clean_chinese_4col_assets/image_005.png','ray_dash_final_clean_chinese_4col_assets/image_006.png']},
+  {name:'冰柠茶', desc:'清爽柠檬茶风味，茶香回甘，入口清新顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/image_007.png','ray_dash_final_clean_chinese_4col_assets/image_008.png']},
+  {name:'粉红番石榴', desc:'热带番石榴果香浓郁，香甜柔和，口感顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/image_009.png','ray_dash_final_clean_chinese_4col_assets/image_010.png']},
+  {name:'百香果', desc:'百香果风味，酸甜清爽，果香浓郁。', images:['ray_dash_final_clean_chinese_4col_assets/image_011.png','ray_dash_final_clean_chinese_4col_assets/image_012.png']} ,
+  {name:'薄荷', desc:'加强薄荷风味，清凉顺滑，入口冰爽。', images:['ray_dash_final_clean_chinese_4col_assets/image_013.png','ray_dash_final_clean_chinese_4col_assets/image_014.png']} ,
+  {name:'龙井茶', desc:'龙井茶风味，茶香淡雅，回味清新。', images:['ray_dash_final_clean_chinese_4col_assets/image_015.png','ray_dash_final_clean_chinese_4col_assets/image_016.png']} ,
+  {name:'西瓜', desc:'西瓜风味，清甜多汁，口感轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/image_017.png','ray_dash_final_clean_chinese_4col_assets/image_018.png']} ,
+  {name:'水蜜桃', desc:'水蜜桃风味，甜润柔和，果香饱满。', images:['ray_dash_final_clean_chinese_4col_assets/image_019.png','ray_dash_final_clean_chinese_4col_assets/image_020.png']} ,
+  {name:'菠萝', desc:'菠萝风味，热带果香，酸甜明亮。', images:['ray_dash_final_clean_chinese_4col_assets/image_021.png','ray_dash_final_clean_chinese_4col_assets/image_022.png']} ,
+  {name:'青苹果', desc:'青苹果风味，爽脆清甜，微酸开胃。', images:['ray_dash_final_clean_chinese_4col_assets/image_023.png','ray_dash_final_clean_chinese_4col_assets/image_024.png']},
+  {name:'紫晶葡萄', desc:'紫晶葡萄风味，葡萄果香清甜，入口顺滑，回味清新。', images:['ray_dash_final_clean_chinese_4col_assets/image_025.png','ray_dash_final_clean_chinese_4col_assets/image_026.png']},
+  {name:'香芋', desc:'香芋风味，绵密香甜，口感柔和顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/image_027.png','ray_dash_final_clean_chinese_4col_assets/image_028.png']},
+  {name:'可乐', desc:'可乐风味，气泡感清爽，甜感明亮。', images:['ray_dash_final_clean_chinese_4col_assets/image_029.png','ray_dash_final_clean_chinese_4col_assets/image_030.png']},
+  {name:'抹茶', desc:'抹茶风味，茶香细腻，清新顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/image_031.png','ray_dash_final_clean_chinese_4col_assets/image_032.png']},
+  {name:'青提', desc:'青提风味，果香清甜，入口轻盈爽口。', images:['ray_dash_final_clean_chinese_4col_assets/image_033.png','ray_dash_final_clean_chinese_4col_assets/image_034.png']},
+  {name:'黑龙冰', desc:'黑龙冰风味，冰感清爽，口感干净利落。', images:['ray_dash_final_clean_chinese_4col_assets/image_035.png','ray_dash_final_clean_chinese_4col_assets/image_036.png']},
+  {name:'矿泉水', desc:'矿泉水风味，清冽干净，顺滑轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/image_037.png','ray_dash_final_clean_chinese_4col_assets/image_038.png']},
+  {name:'玉米冰', desc:'玉米冰风味，谷物香甜，冰爽柔和。', images:['ray_dash_final_clean_chinese_4col_assets/image_039.png','ray_dash_final_clean_chinese_4col_assets/image_040.png']},
+  {name:'洛神花茶', desc:'洛神花茶风味，花果酸甜清爽，茶感柔和，回味轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/image_041.png','ray_dash_final_clean_chinese_4col_assets/image_042.png']},
+  {name:'绿豆', desc:'绿豆风味，清甜细腻，入口顺滑，带来清爽轻盈的口感。', images:['ray_dash_final_clean_chinese_4col_assets/image_043.png','ray_dash_final_clean_chinese_4col_assets/image_044.png']},
+  {name:'青柠', desc:'青柠风味，酸甜明亮，清新爽口，回味干净利落。', images:['ray_dash_final_clean_chinese_4col_assets/image_045.png','ray_dash_final_clean_chinese_4col_assets/image_046.png']},
+  {name:'铁观音', desc:'铁观音风味，茶香清雅，入口顺滑，回甘自然。', images:['ray_dash_final_clean_chinese_4col_assets/image_047.png','ray_dash_final_clean_chinese_4col_assets/image_048.png']},
+  {name:'冰葡萄酒', desc:'冰葡萄酒风味，葡萄香气清甜，冰爽顺滑，层次轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/image_049.png','ray_dash_final_clean_chinese_4col_assets/image_050.png']}
+];
+let current口味=0, currentImage=0;
+const mainImage=document.getElementById('mainImage');
+const gallery=document.getElementById('gallery');
+const thumbs=document.getElementById('thumbs');
+const flavorGrid=document.getElementById('flavors');
+const flavorName=document.getElementById('flavorName');
+const flavorDesc=document.getElementById('flavorDesc');
+const flavorPill=document.getElementById('flavorPill');
+function updateMain(src){gallery.classList.add('switching');setTimeout(()=>{mainImage.src=src;gallery.classList.remove('switching')},170)}
+function render口味s(){flavorGrid.innerHTML='';flavors.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===current口味?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{current口味=i;currentImage=0;update();};flavorGrid.appendChild(b);})}
+function renderThumbs(){thumbs.innerHTML='';flavors[current口味].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentImage?' active':'');b.innerHTML=`<img src="${src}" alt="${flavors[current口味].name} 展示图${i+1}">`;b.onclick=()=>{currentImage=i;update();};thumbs.appendChild(b);})}
+function update(){const f=flavors[current口味];updateMain(f.images[currentImage]);flavorName.textContent=f.name;flavorDesc.textContent=f.desc;flavorPill.textContent=f.name;render口味s();renderThumbs();}
+update();
+
+const quikFlavorsData = [
+  {name:'番石榴', desc:'清甜番石榴风味，果香柔和顺滑，入口清新，适合日常轻松使用。', images:['ray_dash_final_clean_chinese_4col_assets/image_002.png']},
+  {name:'百香果', desc:'百香果风味，酸甜清爽，果香明亮，入口顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_passion_fruit.jpg']},
+  {name:'矿泉水', desc:'矿泉水风味，清冽干净，口感轻盈顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_mineral.jpg']},
+  {name:'薄荷', desc:'薄荷风味，清凉干净，入口冰爽顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_mint.jpg']},
+  {name:'草莓', desc:'草莓风味，香甜柔和，果香顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_strawberry.jpg']},
+  {name:'西瓜', desc:'西瓜风味，清甜多汁，入口轻盈清爽。', images:['ray_dash_final_clean_chinese_4col_assets/quik_watermelon.jpg']},
+  {name:'荔枝', desc:'荔枝风味，果香清甜，口感柔和顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_lychee.jpg']},
+  {name:'芒果', desc:'芒果风味，热带果香浓郁，甜润顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_mango.jpg']},
+  {name:'青提', desc:'青提风味，果香清甜，入口轻盈爽口。', images:['ray_dash_final_clean_chinese_4col_assets/quik_green_grape.jpg']},
+  {name:'可乐', desc:'可乐风味，甜感明亮，清爽顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_cola.jpg']},
+  {name:'香蕉', desc:'香蕉风味，香甜绵密，口感柔和顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_banana.jpg']},
+  {name:'柠檬茶', desc:'柠檬茶风味，酸甜清新，茶香回甘。', images:['ray_dash_final_clean_chinese_4col_assets/quik_lemon_tea.jpg']},
+  {name:'葡萄', desc:'葡萄风味，果香清甜，层次轻盈顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/quik_grape.jpg']}
+];
+let currentQuikFlavor=0, currentQuikImage=0;
+const quikMainImage=document.getElementById('quikMainImage');
+const quikGallery=document.getElementById('quikGallery');
+const quikThumbs=document.getElementById('quikThumbs');
+const quikFlavors=document.getElementById('quikFlavors');
+const quikFlavorName=document.getElementById('quikFlavorName');
+const quikFlavorDesc=document.getElementById('quikFlavorDesc');
+const quikFlavorPill=document.getElementById('quikFlavorPill');
+let quikMainTimer;
+function updateQuikMain(src,name){clearTimeout(quikMainTimer);quikGallery.classList.add('switching');quikMainTimer=setTimeout(()=>{quikMainImage.src=src;quikMainImage.alt=`Quik ${name} 产品展示图`;quikGallery.classList.remove('switching')},170)}
+function renderQuikFlavors(){quikFlavors.innerHTML='';quikFlavorsData.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===currentQuikFlavor?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{currentQuikFlavor=i;currentQuikImage=0;updateQuik();};quikFlavors.appendChild(b);})}
+function renderQuikThumbs(){quikThumbs.innerHTML='';quikFlavorsData[currentQuikFlavor].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentQuikImage?' active':'');b.innerHTML=`<img src="${src}" alt="${quikFlavorsData[currentQuikFlavor].name} 缩略图${i+1}">`;b.onclick=()=>{currentQuikImage=i;updateQuik();};quikThumbs.appendChild(b);})}
+function updateQuik(){const f=quikFlavorsData[currentQuikFlavor];updateQuikMain(f.images[currentQuikImage],f.name);quikFlavorName.textContent=f.name;quikFlavorDesc.textContent=f.desc;quikFlavorPill.textContent=f.name;renderQuikFlavors();renderQuikThumbs();}
+updateQuik();
+
+const jolyiceFlavorsData = [
+  {name:'蜜桃乌龙', english:'Peach Oolong', desc:'蜜桃与乌龙茶香融合，果香清甜，茶感柔和，入口清新顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_peach_oolong.jpg']},
+  {name:'葡萄', english:'Grape', desc:'葡萄风味，果香清甜饱满，入口顺滑，层次轻盈清新。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_grape.jpg']},
+  {name:'青提', english:'Green Grape Ice', desc:'青提风味，果香清甜清爽，冰感轻盈，入口顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_green_grape.jpg']},
+  {name:'芭乐', english:'Sour Guava Ice', desc:'芭乐风味，酸甜清新，果香柔和，冰爽顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_guava.jpg']},
+  {name:'椰子水', english:'Coconut Water', desc:'椰子水风味，清爽自然，口感柔和，回味轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_coconut_water.jpg']},
+  {name:'宝矿力', english:'Iced Pocari', desc:'宝矿力风味，清爽补水感，入口冰凉顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_pocari.jpg']},
+  {name:'绿豆', english:'Ludou Ice', desc:'绿豆风味，清甜细腻，冰爽轻盈，口感顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_mung_bean.jpg']},
+  {name:'荔枝', english:'Lychee Ice', desc:'荔枝风味，果香清甜，冰爽轻盈，入口顺滑清新。', images:['ray_dash_final_clean_chinese_4col_assets/jolyice_lychee.jpg']}
+];
+let currentJolyiceFlavor=0, currentJolyiceImage=0;
+const jolyiceMainImage=document.getElementById('jolyiceMainImage');
+const jolyiceGallery=document.getElementById('jolyiceGallery');
+const jolyiceThumbs=document.getElementById('jolyiceThumbs');
+const jolyiceFlavors=document.getElementById('jolyiceFlavors');
+const jolyiceFlavorName=document.getElementById('jolyiceFlavorName');
+const jolyiceFlavorDesc=document.getElementById('jolyiceFlavorDesc');
+const jolyiceProductName=document.getElementById('jolyiceProductName');
+const jolyiceSpecName=document.getElementById('jolyiceSpecName');
+const jolyiceFlavorPill=document.getElementById('jolyiceFlavorPill');
+const jolyiceEnglishPill=document.getElementById('jolyiceEnglishPill');
+let jolyiceMainTimer;
+function updateJolyiceMain(src,name){clearTimeout(jolyiceMainTimer);jolyiceGallery.classList.add('switching');jolyiceMainTimer=setTimeout(()=>{jolyiceMainImage.src=src;jolyiceMainImage.alt=`Jolyice ${name} 产品展示图`;jolyiceGallery.classList.remove('switching')},170)}
+function renderJolyiceFlavors(){jolyiceFlavors.innerHTML='';jolyiceFlavorsData.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===currentJolyiceFlavor?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{currentJolyiceFlavor=i;currentJolyiceImage=0;updateJolyice();};jolyiceFlavors.appendChild(b);})}
+function renderJolyiceThumbs(){jolyiceThumbs.innerHTML='';jolyiceFlavorsData[currentJolyiceFlavor].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentJolyiceImage?' active':'');b.innerHTML=`<img src="${src}" alt="${jolyiceFlavorsData[currentJolyiceFlavor].name} 缩略图${i+1}">`;b.onclick=()=>{currentJolyiceImage=i;updateJolyice();};jolyiceThumbs.appendChild(b);})}
+function updateJolyice(){const f=jolyiceFlavorsData[currentJolyiceFlavor];updateJolyiceMain(f.images[currentJolyiceImage],f.name);jolyiceFlavorName.textContent=f.name;jolyiceFlavorDesc.textContent=f.desc;jolyiceProductName.textContent=`Jolyice ${f.name}产品`;jolyiceSpecName.textContent=f.name;jolyiceFlavorPill.textContent=f.name;jolyiceEnglishPill.textContent=f.english;renderJolyiceFlavors();renderJolyiceThumbs();}
+updateJolyice();
+
+const gowifFlavorsData = [
+  {name:'百香果', english:'Passion Fruit', desc:'百香果风味，酸甜明亮，果香清爽，入口顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_passion_fruit.jpg']},
+  {name:'话梅菠萝', english:'Plum Pineapple', desc:'话梅与菠萝风味融合，酸甜开胃，果香明亮，入口顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_plum_pineapple.jpg']},
+  {name:'茉莉龙井', english:'Jasmine Longjing', desc:'茉莉花香与龙井茶感融合，清雅回甘，入口清新顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_jasmine_longjing.jpg']},
+  {name:'青柠', english:'Lime', desc:'青柠风味，酸甜清爽，果香明亮，入口干净顺滑。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_lime.jpg']},
+  {name:'100号', english:'No. 100', desc:'100号风味，口感干净顺滑，层次轻盈，适合日常使用。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_100.jpg']},
+  {name:'蓝莓覆盆子', english:'Blueberry Raspberry', desc:'蓝莓与覆盆子风味融合，莓果香气清甜明亮，入口顺滑清新。', images:['ChatGPT Image 2026年6月5日 09_50_22.png']},
+  {name:'香芋冰淇淋', english:'Taro Ice Cream', desc:'香芋冰淇淋风味，芋香绵密甜润，奶香柔和，入口顺滑清凉。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_taro_ice_cream.jpg']},
+  {name:'杨梅', english:'Yangmei', desc:'杨梅风味，酸甜明亮，果香清爽，入口顺滑，回味轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/gowif_yangmei.jpg']}
+];
+let currentGowifFlavor=0, currentGowifImage=0;
+const gowifMainImage=document.getElementById('gowifMainImage');
+const gowifGallery=document.getElementById('gowifGallery');
+const gowifThumbs=document.getElementById('gowifThumbs');
+const gowifFlavors=document.getElementById('gowifFlavors');
+const gowifFlavorName=document.getElementById('gowifFlavorName');
+const gowifFlavorDesc=document.getElementById('gowifFlavorDesc');
+const gowifProductName=document.getElementById('gowifProductName');
+const gowifSpecName=document.getElementById('gowifSpecName');
+const gowifFlavorPill=document.getElementById('gowifFlavorPill');
+const gowifEnglishPill=document.getElementById('gowifEnglishPill');
+let gowifMainTimer;
+function updateGowifMain(src,name){clearTimeout(gowifMainTimer);gowifGallery.classList.add('switching');gowifMainTimer=setTimeout(()=>{gowifMainImage.src=src;gowifMainImage.alt=`Gowif ${name} 产品展示图`;gowifGallery.classList.remove('switching')},170)}
+function renderGowifFlavors(){gowifFlavors.innerHTML='';gowifFlavorsData.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===currentGowifFlavor?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{currentGowifFlavor=i;currentGowifImage=0;updateGowif();};gowifFlavors.appendChild(b);})}
+function renderGowifThumbs(){gowifThumbs.innerHTML='';gowifFlavorsData[currentGowifFlavor].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentGowifImage?' active':'');b.innerHTML=`<img src="${src}" alt="${gowifFlavorsData[currentGowifFlavor].name} 缩略图${i+1}">`;b.onclick=()=>{currentGowifImage=i;updateGowif();};gowifThumbs.appendChild(b);})}
+function updateGowif(){const f=gowifFlavorsData[currentGowifFlavor];updateGowifMain(f.images[currentGowifImage],f.name);gowifFlavorName.textContent=f.name;gowifFlavorDesc.textContent=f.desc;gowifProductName.textContent=`Gowif ${f.name}产品`;gowifSpecName.textContent=f.name;gowifFlavorPill.textContent=f.name;gowifEnglishPill.textContent=f.english;renderGowifFlavors();renderGowifThumbs();}
+updateGowif();
+
+const relxSixthVariantsData = [
+  {name:'粉色', desc:'Relx六代杆粉色款，机身色泽柔和，外观简洁清爽。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_pink.jpg']},
+  {name:'灰色', desc:'Relx六代杆灰色款，金属质感沉稳低调，线条简洁利落。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_gray.jpg']},
+  {name:'蓝色', desc:'Relx六代杆蓝色款，色调清爽明亮，视觉干净轻盈。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_blue.jpg']},
+  {name:'紫色', desc:'Relx六代杆紫色款，色泽柔和雅致，外观精致清新。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_purple.jpg']},
+  {name:'白色', desc:'Relx六代杆白色款，外观简洁纯净，风格清爽百搭。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_white.jpg']},
+  {name:'绿色', desc:'Relx六代杆绿色款，色调自然清新，机身质感柔和。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_green.jpg']},
+  {name:'黑色', desc:'Relx六代杆黑色款，外观沉稳经典，质感简洁利落。', images:['ray_dash_final_clean_chinese_4col_assets/relx_sixth_black.jpg']}
+];
+let currentRelxSixthVariant=0, currentRelxSixthImage=0;
+const relxSixthMainImage=document.getElementById('relxSixthMainImage');
+const relxSixthGallery=document.getElementById('relxSixthGallery');
+const relxSixthThumbs=document.getElementById('relxSixthThumbs');
+const relxSixthVariants=document.getElementById('relxSixthVariants');
+const relxSixthVariantName=document.getElementById('relxSixthVariantName');
+const relxSixthVariantDesc=document.getElementById('relxSixthVariantDesc');
+const relxSixthProductName=document.getElementById('relxSixthProductName');
+const relxSixthSpecName=document.getElementById('relxSixthSpecName');
+const relxSixthVariantPill=document.getElementById('relxSixthVariantPill');
+let relxSixthMainTimer;
+function updateRelxSixthMain(src,name){clearTimeout(relxSixthMainTimer);relxSixthGallery.classList.add('switching');relxSixthMainTimer=setTimeout(()=>{relxSixthMainImage.src=src;relxSixthMainImage.alt=`Relx六代杆 ${name} 产品展示图`;relxSixthGallery.classList.remove('switching')},170)}
+function renderRelxSixthVariants(){relxSixthVariants.innerHTML='';relxSixthVariantsData.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===currentRelxSixthVariant?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{currentRelxSixthVariant=i;currentRelxSixthImage=0;updateRelxSixth();};relxSixthVariants.appendChild(b);})}
+function renderRelxSixthThumbs(){relxSixthThumbs.innerHTML='';relxSixthVariantsData[currentRelxSixthVariant].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentRelxSixthImage?' active':'');b.innerHTML=`<img src="${src}" alt="Relx六代杆 ${relxSixthVariantsData[currentRelxSixthVariant].name} 缩略图${i+1}">`;b.onclick=()=>{currentRelxSixthImage=i;updateRelxSixth();};relxSixthThumbs.appendChild(b);})}
+function updateRelxSixth(){const f=relxSixthVariantsData[currentRelxSixthVariant];updateRelxSixthMain(f.images[currentRelxSixthImage],f.name);relxSixthVariantName.textContent=f.name;relxSixthVariantDesc.textContent=f.desc;relxSixthProductName.textContent=`Relx六代杆${f.name}设备`;relxSixthSpecName.textContent=f.name;relxSixthVariantPill.textContent=f.name;renderRelxSixthVariants();renderRelxSixthThumbs();}
+updateRelxSixth();
+
+const relxFifthVariantsData = [
+  {name:'蓝焰星光', desc:'Relx五代杆蓝焰星光款，蓝金渐变清爽明亮，机身质感细腻。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_blue_flame_starlight.jpg']},
+  {name:'奇境碧光', desc:'Relx五代杆奇境碧光款，黄绿渐变鲜明灵动，外观亮眼清新。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_wonderland_green_light.jpg']},
+  {name:'星河映月', desc:'Relx五代杆星河映月款，青白渐变清澈柔和，机身质感细腻。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_galaxy_moon.jpg']},
+  {name:'鸢尾蓝', desc:'Relx五代杆鸢尾蓝款，深蓝色调沉稳雅致，外观简洁利落。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_iris_blue.jpg']},
+  {name:'炽焰橘', desc:'Relx五代杆炽焰橘款，橙色机身热烈醒目，质感明亮有活力。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_blazing_orange.jpg']},
+  {name:'皎月银', desc:'Relx五代杆皎月银款，银色机身干净清爽，金属质感沉稳百搭。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_moon_silver.jpg']},
+  {name:'晨霜绿', desc:'Relx五代杆晨霜绿款，浅绿色调清新柔和，机身质感细腻自然。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_morning_frost_green.jpg']},
+  {name:'石墨黑', desc:'Relx五代杆石墨黑款，深黑机身沉稳简洁，质感低调利落。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_graphite_black.jpg']},
+  {name:'零度逐霜', desc:'Relx五代杆零度逐霜款，银白色调清冷干净，外观简约纯净。', images:['ray_dash_final_clean_chinese_4col_assets/relx_fifth_zero_frost.jpg']}
+];
+let currentRelxFifthVariant=0, currentRelxFifthImage=0;
+const relxFifthMainImage=document.getElementById('relxFifthMainImage');
+const relxFifthGallery=document.getElementById('relxFifthGallery');
+const relxFifthThumbs=document.getElementById('relxFifthThumbs');
+const relxFifthVariants=document.getElementById('relxFifthVariants');
+const relxFifthVariantName=document.getElementById('relxFifthVariantName');
+const relxFifthVariantDesc=document.getElementById('relxFifthVariantDesc');
+const relxFifthProductName=document.getElementById('relxFifthProductName');
+const relxFifthSpecName=document.getElementById('relxFifthSpecName');
+const relxFifthVariantPill=document.getElementById('relxFifthVariantPill');
+let relxFifthMainTimer;
+function updateRelxFifthMain(src,name){clearTimeout(relxFifthMainTimer);relxFifthGallery.classList.add('switching');relxFifthMainTimer=setTimeout(()=>{relxFifthMainImage.src=src;relxFifthMainImage.alt=`Relx五代杆 ${name} 产品展示图`;relxFifthGallery.classList.remove('switching')},170)}
+function renderRelxFifthVariants(){relxFifthVariants.innerHTML='';relxFifthVariantsData.forEach((f,i)=>{const b=document.createElement('button');b.className='flavor'+(i===currentRelxFifthVariant?' active':'');b.setAttribute('aria-label',f.name);b.innerHTML=`<img src="${f.images[0]}" alt="${f.name}"><span>${f.name}</span>`;b.onclick=()=>{currentRelxFifthVariant=i;currentRelxFifthImage=0;updateRelxFifth();};relxFifthVariants.appendChild(b);})}
+function renderRelxFifthThumbs(){relxFifthThumbs.innerHTML='';relxFifthVariantsData[currentRelxFifthVariant].images.forEach((src,i)=>{const b=document.createElement('button');b.className='thumb'+(i===currentRelxFifthImage?' active':'');b.innerHTML=`<img src="${src}" alt="Relx五代杆 ${relxFifthVariantsData[currentRelxFifthVariant].name} 缩略图${i+1}">`;b.onclick=()=>{currentRelxFifthImage=i;updateRelxFifth();};relxFifthThumbs.appendChild(b);})}
+function updateRelxFifth(){const f=relxFifthVariantsData[currentRelxFifthVariant];updateRelxFifthMain(f.images[currentRelxFifthImage],f.name);relxFifthVariantName.textContent=f.name;relxFifthVariantDesc.textContent=f.desc;relxFifthProductName.textContent=`Relx五代杆${f.name}设备`;relxFifthSpecName.textContent=f.name;relxFifthVariantPill.textContent=f.name;renderRelxFifthVariants();renderRelxFifthThumbs();}
+updateRelxFifth();
+</script>
+</body>
+</html>
